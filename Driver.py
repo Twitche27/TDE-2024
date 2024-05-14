@@ -18,11 +18,12 @@ class Driver():
         s.creation_flags = CREATE_NO_WINDOW
         self.__driver = webdriver.Chrome(service=s, options=c)
 
-    def acess_tabnet(self, uf: str):
+    def acess_tabnet(self, uf: str, ano: str):
         self.__driver.get("https://datasus.saude.gov.br/nascidos-vivos-desde-1994/")
         self.__driver.find_element(By.NAME, "radiobutton").click()
         select = Select(self.__driver.find_element(By.ID, 'mySelect'))
         select.select_by_visible_text(uf)
+        self.__select_options(ano)
         
     def __select_options(self, ano: str) -> str:
         WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.ID, "F")))
