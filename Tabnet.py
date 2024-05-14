@@ -24,7 +24,7 @@ class Driver():
         select = Select(self.__driver.find_element(By.ID, 'mySelect'))
         select.select_by_visible_text(uf)
         
-    def select_options(self, ano: str) -> str:
+    def __select_options(self, ano: str) -> str:
         WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.ID, "F")))
         select = Select(self.__driver.find_element(By.ID, 'C'))
         select.select_by_visible_text("Idade da mãe")
@@ -42,12 +42,3 @@ class Driver():
         self.__driver.find_element(By.XPATH, "//input[@class='mostra']").click()
         self.__driver.switch_to.window(self.__driver.window_handles[1])
         return self.__driver.find_element(By.XPATH, "//pre").text
-        
-        
-def main():
-    driver = Driver()
-    driver.acess_tabnet("Bahia")
-    driver.select_options("2021")
-
-if __name__ == "__main__":
-    main()
