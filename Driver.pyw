@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
-from subprocess import CREATE_NO_WINDOW
 
 class Driver():
     __driver: WebDriver
@@ -15,10 +14,10 @@ class Driver():
         s = Service()
         c.add_argument("start-maximized")
         c.add_argument("--remote-debugging-port=7777")
-        s.creation_flags = CREATE_NO_WINDOW
         self.__driver = webdriver.Chrome(service=s, options=c)
 
     def acess_tabnet(self, uf: str, ano: str):
+        #fazer fail safe do navegador estar aberto
         self.__driver.get("https://datasus.saude.gov.br/nascidos-vivos-desde-1994/")
         self.__driver.find_element(By.NAME, "radiobutton").click()
         select = Select(self.__driver.find_element(By.ID, 'mySelect'))
