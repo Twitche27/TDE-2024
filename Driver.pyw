@@ -41,7 +41,7 @@ class Driver():
         expression = "IBGE divulga o rendimento domiciliar per capita ((para)|(de))? " + f"{ano}"
         for noticia in noticias:
             if ((re.search(expression, noticia.text[:-11])) or ((noticia.text[:-11] == "IBGE divulga rendimento domiciliar per capita segundo a PNAD Contínua para o FPE") and (noticia.text[-4:] == ano))):
-                sleep(60) #tá funcionando, fazer essa parte agr
+                noticia.click()
                 
 
     def __select_options(self, ano: str) -> str:
