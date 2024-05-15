@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from tkinter import messagebox
 import re
+from time import sleep
 
 class Driver():
     __driver: WebDriver
@@ -31,13 +32,16 @@ class Driver():
         self.__driver.get("https://agenciadenoticias.ibge.gov.br/busca-avancada.html")
         self.__driver.find_element(By.CLASS_NAME, "input__texto").send_keys("rendimento domiciliar per capita")
         self.__driver.find_element(By.ID, "exata_contem").click()
-        self.__driver.find_element(By.CLASS_NAME, "botao botao--avancada").click()
-        WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.Xpath, "//h3")))
+        self.__driver.find_element(By.XPATH, "//input[@type='submit']").click()
+        WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.XPATH, "//h3")))
+        self.__select_noticia(ano)
         
     def __select_noticia(self, ano: str) -> str:
-        noticias = self.__driver.find_elements(By.XPATH, "h3")
+        noticias = self.__driver.find_elements(By.XPATH, "//h3")
+        expression = "IBGE divulga o rendimento domiciliar per capita ((para)|(de))? " + f"{ano}"
         for noticia in noticias:
-            if noticia.text ==  f"IBGE divulga o rendimento domiciliar per capita para {ano}" or (noticia.text == "IBGE divulga rendimento domiciliar per capita segundo a PNAD Contínua para o FPE" and noticia.find_element(By.XPATH, "//span").text == re.search(f".{6}{ano[2:4]}")):
+            if ((re.search(expression, noticia.text[:-11])) or ((noticia.text[:-11] == "IBGE divulga rendimento domiciliar per capita segundo a PNAD Contínua para o FPE") and (noticia.text[-4:] == ano))):
+                sleep(60) #tá funcionando, fazer essa parte agr
                 
 
     def __select_options(self, ano: str) -> str:
@@ -63,3 +67,8 @@ class Driver():
             messagebox.showerror("Error", "Erro: A página demorou muito para carregar.")
     
 
+def main():
+    driver = Driver()
+    driver.acess_ibge_noticias('2021')
+
+main()
