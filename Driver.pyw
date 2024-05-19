@@ -1,15 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.expected_conditions import WebDriver
+from selenium.webdriver.support.expected_conditions import WebDriver, element_to_be_clickable, presence_of_element_located
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from tkinter import messagebox
 import re
-from time import sleep
 
 class Driver():
     __driver: WebDriver
@@ -28,22 +26,24 @@ class Driver():
         select.select_by_visible_text(uf)
         self.__select_options(ano)
     
-    def acess_ibge_noticias(self, ano: str) -> None:
+    def acess_ibge_noticias(self, ano: str) -> dict[str, int]:
         self.__driver.get("https://agenciadenoticias.ibge.gov.br/busca-avancada.html")
         self.__driver.find_element(By.CLASS_NAME, "input__texto").send_keys("rendimento domiciliar per capita")
         self.__driver.find_element(By.ID, "exata_contem").click()
         self.__driver.find_element(By.XPATH, "//input[@type='submit']").click()
-        WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.XPATH, "//h3")))
-        self.__select_noticia(ano)
+        WebDriverWait(self.__driver, 5).until(element_to_be_clickable((By.ID, "cookie-btn"))).click()
+        return self.__select_noticia(ano)
         
-    def __select_noticia(self, ano: str) -> str:
+    def __select_noticia(self, ano: str) -> dict[str, int]:
         noticias = self.__driver.find_elements(By.XPATH, "//h3")
         expression = "IBGE divulga o rendimento domiciliar per capita ((para)|(de))? " + f"{ano}"
         for noticia in noticias:
             if ((re.search(expression, noticia.text[:-11])) or ((noticia.text[:-11] == "IBGE divulga rendimento domiciliar per capita segundo a PNAD Contínua para o FPE") and (noticia.text[-4:] == ano))):
                 noticia.click()
-                
-
+                break
+        UFs = self.__driver.find_elements(By.XPATH, "//td")
+        return {x.text: int(y.text.replace('.', '')) for x, y in zip(UFs[0::2], UFs[1::2])}
+        
     def __select_options(self, ano: str) -> str:
         try:
             WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.ID, "F")))
@@ -65,7 +65,6 @@ class Driver():
             return self.__driver.find_element(By.XPATH, "//pre").text
         except TimeoutException:    
             messagebox.showerror("Error", "Erro: A página demorou muito para carregar.")
-    
 
 def main():
     driver = Driver()
