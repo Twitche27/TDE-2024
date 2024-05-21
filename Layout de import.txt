@@ -1,0 +1,11 @@
+from DriverNoticias import Driver as D1
+from DriverTabnet import Driver as D2
+
+# Criando uma instância de Driver
+driver_instance = D1()
+ 
+# Chamando o método access_ibge_noticias
+resultado = driver_instance.access_ibge_noticias('2014')
+
+# Exibindo o resultado (você pode fazer o que quiser com o resultado)
+print(resultado)
