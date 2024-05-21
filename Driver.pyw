@@ -52,7 +52,7 @@ class Driver():
                 noticia.click()
                 break
         UFs = self.__driver.find_elements(By.XPATH, "//td")
-        return {x.text: int(y.text.replace('.', '')) for x, y in zip(UFs[0::2], UFs[1::2])}
+        return {x.text: int(y.text.replace('.', '').replace(',', '')) for x, y in zip(UFs[0::2], UFs[1::2])}
 
     def __select_options(self, ano: str) -> str:
         WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.ID, "F")))
