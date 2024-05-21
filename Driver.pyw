@@ -72,9 +72,3 @@ class Driver():
         self.__driver.find_element(By.XPATH, "//input[@class='mostra']").click()
         self.__driver.switch_to.window(self.__driver.window_handles[1])
         return self.__driver.find_element(By.XPATH, "//pre").text
-        
-def main():
-    driver = Driver()
-    driver.acess_ibge_noticias('2021')
-
-main()
