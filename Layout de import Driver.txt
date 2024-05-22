@@ -1,8 +1,7 @@
-from DriverNoticias import Driver as D1
-from DriverTabnet import Driver as D2
+from DriverClass import DriverNoticias, DriverTabnet
 
 # Criando uma instância de Driver
-driver_instance = D1()
+driver_instance = DriverNoticias()
  
 # Chamando o método access_ibge_noticias
 resultado = driver_instance.access_ibge_noticias('2014')
