@@ -80,7 +80,7 @@ class DriverNoticias(Driver):
                     noticia.click()
                     break
         UFs = self.driver.find_elements(By.XPATH, "//td")
-        return {x.text: float(y.text.replace('.', '').replace(',', '.').replace("R$", "").replace(" ", "")) for x, y in zip(UFs[0::2], UFs[1::2])}
+        return {x.text: float(y.text.replace('.', '').replace(',', '.').replace('R$', '').replace(' ', '')) for x, y in zip(UFs[0::2], UFs[1::2])}
 
     def access_ibge_noticias(self, ano: str) -> dict[str, float]|None:
         try:
@@ -94,3 +94,7 @@ class DriverNoticias(Driver):
             messagebox.showerror("Error", "Erro: A página não existe ou o navegador foi fechado.")
             Tk().destroy()
             return None
+    
+    @property
+    def d_noticias(self):
+        return self
