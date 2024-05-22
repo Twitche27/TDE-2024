@@ -6,7 +6,6 @@ from selenium.common.exceptions import NoSuchWindowException, ElementClickInterc
 from selenium.webdriver.common.by import By
 from tkinter import messagebox, Tk
 import re
-from typing import Optional
 
 class Driver:
     __driver: WebDriver
