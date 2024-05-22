@@ -1,10 +1,9 @@
+from DriverClass import Driver
 from selenium.webdriver.support.ui import Select, WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchWindowException
 from tkinter import messagebox
-
-from DriverClass import Driver
 
 def __select_options(self, ano: str) -> str:
         WebDriverWait(self.__driver, 5).until(presence_of_element_located((By.ID, "F")))
@@ -38,3 +37,4 @@ def access_tabnet(self, uf: str, ano: str) -> str:
             messagebox.showerror("Error", "Erro: A página não existe ou o navegador foi fechado.")
 
 Driver.access_tabnet = access_tabnet
+Driver.__select_options = __select_options

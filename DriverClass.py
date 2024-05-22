@@ -5,13 +5,17 @@ from tkinter import messagebox
 from selenium.common.exceptions import WebDriverException
 
 class Driver:
-    driver: WebDriver
+    __driver: WebDriver
     def __init__(self) -> None:
         c = Options()
         c.add_argument("start-maximized")
         c.add_argument("--remote-debugging-port=7777")
         try:
-            self.driver = webdriver.Chrome(options=c)
+            self.__driver = webdriver.Chrome(options=c)
         except (WebDriverException):
             messagebox.showerror("Error", "Erro: Há outro navegador com o mesmo port aberto.")
+    
+    @property
+    def driver(self):
+        return self.__driver
     
