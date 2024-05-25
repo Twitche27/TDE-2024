@@ -1,0 +1,46 @@
+ Nascidos vivos - Brasil
+Nascim p/resid.mãe por Unidade da Federação e Idade da mãe
+Idade da mãe: Menor de 10 anos, 10 a 14 anos, 15 a 19 anos
+Período:2020
+"Unidade da Federação";"10 a 14 anos";"15 a 19 anos";"Total"
+"11 Rondônia";157;3920;4077
+"12 Acre";206;3293;3499
+"13 Amazonas";1075;16332;17407
+"14 Roraima";189;2640;2829
+"15 Pará";1670;27588;29258
+"16 Amapá";188;2866;3054
+"17 Tocantins";255;4108;4363
+"21 Maranhão";1287;21845;23132
+"22 Piauí";416;7499;7915
+"23 Ceará";979;16546;17525
+"24 Rio Grande do Norte";322;5891;6213
+"25 Paraíba";436;8419;8855
+"26 Pernambuco";960;20425;21385
+"27 Alagoas";546;9309;9855
+"28 Sergipe";308;5123;5431
+"29 Bahia";1568;28777;30345
+"31 Minas Gerais";1002;27298;28300
+"32 Espírito Santo";308;6520;6828
+"33 Rio de Janeiro";1128;25421;26549
+"35 São Paulo";1772;52478;54250
+"41 Paraná";629;15958;16587
+"42 Santa Catarina";305;9066;9371
+"43 Rio Grande do Sul";476;13108;13584
+"50 Mato Grosso do Sul";355;5947;6302
+"51 Mato Grosso";445;8318;8763
+"52 Goiás";474;11730;12204
+"53 Distrito Federal";123;3649;3772
+"00 Ignorado/exterior";-;-;-
+"Total";17579;364074;381653
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Nascidos Vivos - SINASC
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Nascidos Vivos, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Consolidação do Sistema de Informações sobre Nascidos Vivos - 2011".
+ 
+ * A categorização da "Adequação quantitativa de pré-natal" mostrada na variável "Adeq quant pré-natal" considera o início do
+ pré-natal no primeiro trimestre e um mínimo de seis consultas de pré-natal –, sendo gravada em campo chamado Kotelchuck no
+ arquivo disponível para download, calculado a partir dos campos “33 – Número de consultas pré-natal” (Mesprenat) e “34 – Mês de gestação em que iniciou o pré-natal” (Consprenat).
+ Maiores informações no documento "Saúde Brasil 2017: uma análise da situação de saúde e os desafios para o alcance dos Objetivos de Desenvolvi
+ 

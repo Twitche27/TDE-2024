@@ -1,0 +1,46 @@
+ Nascidos vivos - Brasil
+Nascim p/resid.mãe por Unidade da Federação e Idade da mãe
+Idade da mãe: Menor de 10 anos, 10 a 14 anos, 15 a 19 anos
+Período:2015
+"Unidade da Federação";"Menor de 10 anos";"10 a 14 anos";"15 a 19 anos";"Total"
+"11 Rondônia";-;226;5411;5637
+"12 Acre";-;305;4274;4579
+"13 Amazonas";-;1432;19762;21194
+"14 Roraima";-;227;2551;2778
+"15 Pará";-;2262;35857;38119
+"16 Amapá";-;247;3766;4013
+"17 Tocantins";-;315;5477;5792
+"21 Maranhão";-;1700;28356;30056
+"22 Piauí";-;592;10155;10747
+"23 Ceará";-;1420;24369;25789
+"24 Rio Grande do Norte";1;573;8840;9414
+"25 Paraíba";-;641;10868;11509
+"26 Pernambuco";-;1531;28321;29852
+"27 Alagoas";-;827;12918;13745
+"28 Sergipe";-;417;7155;7572
+"29 Bahia";-;2363;39140;41503
+"31 Minas Gerais";-;1581;39853;41434
+"32 Espírito Santo";-;464;9079;9543
+"33 Rio de Janeiro";-;1849;38856;40705
+"35 São Paulo";-;3187;84463;87650
+"41 Paraná";-;1169;25938;27107
+"42 Santa Catarina";-;453;13436;13889
+"43 Rio Grande do Sul";-;869;20700;21569
+"50 Mato Grosso do Sul";-;512;8305;8817
+"51 Mato Grosso";-;557;10535;11092
+"52 Goiás";-;774;17007;17781
+"53 Distrito Federal";-;207;5472;5679
+"00 Ignorado/exterior";-;-;-;-
+"Total";1;26700;520864;547565
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Nascidos Vivos - SINASC
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Nascidos Vivos, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Consolidação do Sistema de Informações sobre Nascidos Vivos - 2011".
+ 
+ * A categorização da "Adequação quantitativa de pré-natal" mostrada na variável "Adeq quant pré-natal" considera o início do
+ pré-natal no primeiro trimestre e um mínimo de seis consultas de pré-natal –, sendo gravada em campo chamado Kotelchuck no
+ arquivo disponível para download, calculado a partir dos campos “33 – Número de consultas pré-natal” (Mesprenat) e “34 – Mês de gestação em que iniciou o pré-natal” (Consprenat).
+ Maiores informações no documento "Saúde Brasil 2017: uma análise da situação de saúde e os desafios para o alcance dos Objetivos de Desenvolvi
+ 
