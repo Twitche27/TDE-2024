@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.expected_conditions import WebDriver
-from selenium.common.exceptions import NoSuchWindowException, ElementClickInterceptedException, WebDriverException, TimeoutException
+from selenium.common.exceptions import NoSuchWindowException, ElementClickInterceptedException, WebDriverException
 from selenium.webdriver.common.by import By
 from tkinter import messagebox, Tk
 import re
