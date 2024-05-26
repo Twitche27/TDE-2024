@@ -11,9 +11,9 @@ class Populacao(object):
         self.driver = webdriver.Chrome()
         self.driver.get(link)
 
-    def selecionar_variaveis(self, xpath):
+    def selecionar_variaveis(self, lista_xpath):
         WebDriverWait(self.driver, 20).until(EC.invisibility_of_element((By.CLASS_NAME, "loading-logo carregado")))
-        for x in xpath:
+        for x in lista_xpath:
             self.driver.execute_script("arguments[0].click();", WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, f'{x}'))))
 
     def selecionar_formato(self, xpath):
@@ -39,4 +39,4 @@ if __name__ == '__main__':
     extrair.selecionar_variaveis(xpath_lista)
     extrair.selecionar_formato('//*[@id="container-posteriori"]/div/div[1]/table/tbody/tr[2]/td[2]/select')
     extrair.fazer_download('//*[@id="opcao-downloads"]/strong')
-    time.sleep(5)
+    time.sleep(2)
