@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
-from xpath import xpath_lista
 import time
 
 class Populacao(object):
@@ -25,6 +24,15 @@ class Populacao(object):
     def fazer_download(self, xpath):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, f'{xpath}'))).click()
 
+xpath_lista = ['//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[2]/div/div/div/button', 
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[3]/div/div/div/button',
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[4]/div/div/div/button',
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[5]/div/div/div/button',
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[6]/div/div/div/button',
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[7]/div/div/div/button',
+              '//*[@id="panel-P-collapse"]/div[3]/div/div[2]/div/div/div/div/div[8]/div/div/div/button',
+              '//*[@id="arvore-245e-1"]/div/div/div/button', '//*[@id="arvore-325e-1"]/div/div/div/button',
+              '//*[@id="botao-downloads"]']
 
 if __name__ == '__main__':
     extrair = Populacao('https://sidra.ibge.gov.br/tabela/6579')
