@@ -1,0 +1,45 @@
+ Nascidos vivos - Brasil
+Nascim p/resid.mãe por Unidade da Federação e Idade da mãe
+Período:2015
+"Unidade da Federação";"Menor de 10 anos";"10 a 14 anos";"15 a 19 anos";"20 a 24 anos";"25 a 29 anos";"30 a 34 anos";"35 a 39 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"Idade ignorada";"Total"
+"11 Rondônia";-;226;5411;8045;6991;4780;2025;418;21;1;-;-;-;-;27918
+"12 Acre";-;305;4274;4458;3520;2653;1367;371;26;3;1;-;-;2;16980
+"13 Amazonas";-;1432;19762;22557;16849;12009;5812;1511;118;14;4;1;-;28;80097
+"14 Roraima";-;227;2551;3152;2525;1844;876;204;22;2;-;-;-;9;11412
+"15 Pará";-;2262;35857;43619;31431;19833;8472;1978;184;14;-;-;-;7;143657
+"16 Amapá";-;247;3766;4254;3428;2467;1237;322;22;2;-;-;-;5;15750
+"17 Tocantins";-;315;5477;6959;5912;4156;1901;367;21;2;-;-;-;-;25110
+"21 Maranhão";-;1700;28356;34257;27700;16858;6937;1600;139;11;4;2;-;-;117564
+"22 Piauí";-;592;10155;12818;12353;8673;3774;833;49;4;-;2;-;-;49253
+"23 Ceará";-;1420;24369;33818;32803;24483;12311;3054;228;19;2;-;-;9;132516
+"24 Rio Grande do Norte";1;573;8840;11965;12457;9396;4709;1093;62;2;1;-;-;-;49099
+"25 Paraíba";-;641;10868;15002;14545;11250;5374;1328;76;4;1;-;-;-;59089
+"26 Pernambuco";-;1531;28321;38170;35290;25971;12437;3073;214;13;3;-;1;-;145024
+"27 Alagoas";-;827;12918;14148;11541;8012;3834;909;59;7;2;-;-;-;52257
+"28 Sergipe";-;417;7155;8665;8165;6299;3303;862;47;4;-;-;-;-;34917
+"29 Bahia";-;2363;39140;50729;48664;40237;20136;4990;360;25;4;6;-;1;206655
+"31 Minas Gerais";-;1581;39853;62633;65680;59138;31860;7113;413;27;4;1;-;2;268305
+"32 Espírito Santo";-;464;9079;13362;14254;12160;6208;1336;75;2;1;-;-;-;56941
+"33 Rio de Janeiro";-;1849;38856;58120;55385;48637;27337;6382;361;20;10;-;-;3;236960
+"35 São Paulo";-;3187;84463;144427;157036;144949;80016;18773;1084;68;5;3;-;15;634026
+"41 Paraná";-;1169;25938;39966;39593;33113;17059;3880;212;16;-;-;-;1;160947
+"42 Santa Catarina";-;453;13436;22997;24872;21812;11038;2458;143;9;3;-;-;2;97223
+"43 Rio Grande do Sul";-;869;20700;33910;35113;33907;19115;4483;255;6;1;-;-;-;148359
+"50 Mato Grosso do Sul";-;512;8305;11928;10669;8067;3810;805;45;1;-;-;-;-;44142
+"51 Mato Grosso";-;557;10535;15519;14448;10168;4528;859;52;5;-;1;1;-;56673
+"52 Goiás";-;774;17007;26443;26248;19276;8906;1887;102;12;3;1;-;13;100672
+"53 Distrito Federal";-;207;5472;9748;10932;11502;6654;1502;99;6;-;-;-;-;46122
+"00 Ignorado/exterior";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+"Total";1;26700;520864;751669;728404;601650;311036;72391;4489;299;49;17;2;97;3017668
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Nascidos Vivos - SINASC
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Nascidos Vivos, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Consolidação do Sistema de Informações sobre Nascidos Vivos - 2011".
+ 
+ * A categorização da "Adequação quantitativa de pré-natal" mostrada na variável "Adeq quant pré-natal" considera o início do
+ pré-natal no primeiro trimestre e um mínimo de seis consultas de pré-natal –, sendo gravada em campo chamado Kotelchuck no
+ arquivo disponível para download, calculado a partir dos campos “33 – Número de consultas pré-natal” (Mesprenat) e “34 – Mês de gestação em que iniciou o pré-natal” (Consprenat).
+ Maiores informações no documento "Saúde Brasil 2017: uma análise da situação de saúde e os desafios para o alcance dos Objetivos de Desenvolvi
+ 
