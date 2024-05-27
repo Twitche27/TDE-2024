@@ -15,6 +15,7 @@ class Driver:
         try:
             self.__driver = webdriver.Chrome(options=c)
         except (WebDriverException):
+            Tk().withdraw()  
             messagebox.showerror("Error", "Erro: Há outro navegador com o mesmo port aberto.")
             Tk().destroy()
             
@@ -41,6 +42,7 @@ class Driver:
             self.__driver.find_element(By.XPATH, "//input[@type='submit']").click()
             return self.__select_noticia(ano)
         except NoSuchWindowException:
+            Tk().withdraw()  
             messagebox.showerror("Error", "Erro: A página não existe ou o navegador foi fechado.")
             Tk().destroy()
             return
