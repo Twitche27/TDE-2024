@@ -1,4 +1,4 @@
-from DriverClass import DriverNoticias, DriverTabnet
+from DriverClass import DriverNoticias
 
 # Criando uma instância de Driver
 driver_instance = DriverNoticias()
