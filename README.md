@@ -149,7 +149,7 @@ Investigar se estados com menor desenvolvimento socioeconômico apresentam maior
 - Andrey Silva
 - Gabriela Correia
 - Gean Phillipe
-- **Giovanna Simões**
+- Giovanna Simões
 - Julio César
 - Mateus Barros
 
