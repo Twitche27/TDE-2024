@@ -7,7 +7,7 @@
 
 A data science project that investigates the relationship between the **Human Development Index (HDI)** and **teenage pregnancy rates** across Brazilian states between **2014 and 2021**, using public datasets from **IBGE** and **DATASUS**.
 
-> University research project developed for the Computer Science program at Universidade Católica de Santos (2024). :contentReference[oaicite:0]{index=0}
+> University research project developed for the Computer Science program at Universidade Católica de Santos (2024).
 
 ---
 
