@@ -157,6 +157,6 @@ Investigar se estados com menor desenvolvimento socioeconômico apresentam maior
 
 ## 📄 Contexto Acadêmico
 
-Repositório referente ao projeto de pesquisa desenvolvido durante o **3º semestre (2024)** do curso de Ciência da Computação da Universidade Católica de Santos. :contentReference[oaicite:2]{index=2}
+Repositório referente ao projeto de pesquisa desenvolvido durante o **3º semestre (2024)** do curso de Ciência da Computação da Universidade Católica de Santos.
 
 </details>
