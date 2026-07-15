@@ -81,7 +81,7 @@ The objective is to investigate whether regions with lower socioeconomic develop
 
 ## 📄 Academic Context
 
-This repository contains the code developed for a university research project carried out during the **3rd semester (2024)** of the Computer Science degree at Universidade Católica de Santos. :contentReference[oaicite:1]{index=1}
+This repository contains the code developed for a university research project carried out during the **3rd semester (2024)** of the Computer Science degree at Universidade Católica de Santos.
 
 </details>
 
