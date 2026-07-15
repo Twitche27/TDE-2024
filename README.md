@@ -73,7 +73,7 @@ The objective is to investigate whether regions with lower socioeconomic develop
 - Andrey Silva
 - Gabriela Correia
 - Gean Phillipe
-- **Giovanna Simões**
+- Giovanna Simões
 - Julio César
 - Mateus Barros
 
